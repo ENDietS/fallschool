@@ -1262,5 +1262,41 @@ body.modal-open {
     width: 100%;
     text-align: center;
   }
+
+/* v19 - Dinner centred layout */
+
+#dinner .programme-note-wide {
+  text-align: center;
 }
+
+#dinner .programme-note-wide > .eyebrow {
+  text-align: center;
+}
+
+#dinner .programme-note-wide > h2,
+#dinner .programme-note-wide > h3 {
+  text-align: center;
+}
+
+#dinner .programme-note-wide > p {
+  text-align: center;
+}
+
+#dinner .programme-note-wide > h3 {
+  margin-top: 38px;
+  margin-bottom: 16px;
+}
+
+#dinner .programme-note-wide > p:not(.eyebrow) {
+  margin-bottom: 22px;
+  line-height: 1.75;
+}
+
+@media (max-width: 680px) {
+  #dinner .programme-note-wide > h3 {
+    margin-top: 32px;
+    margin-bottom: 14px;
+  }
+}
+
 
