@@ -1191,34 +1191,37 @@ body.modal-open {
     padding-top: 0;
   }
 
-/* v18 - Gather to Nourish Dinner refinements */
+/* v20 - Dinner layout: centred and spaced */
 
 #dinner .programme-note-wide {
   max-width: 920px;
-  text-align: left;
-  padding: clamp(28px, 5vw, 52px);
+  margin-left: auto;
+  margin-right: auto;
+  padding: clamp(28px, 5vw, 48px);
+  text-align: center !important;
 }
 
-#dinner .programme-note-wide > .eyebrow {
-  margin-bottom: 14px;
+#dinner .programme-note-wide > .eyebrow,
+#dinner .programme-note-wide > h2,
+#dinner .programme-note-wide > h3,
+#dinner .programme-note-wide > p {
+  text-align: center !important;
 }
 
 #dinner .programme-note-wide > h2 {
-  margin-bottom: 24px;
-  line-height: 1.12;
+  margin: 0 0 30px;
+  line-height: 1.15;
 }
 
 #dinner .programme-note-wide > h3 {
-  margin-top: 32px;
-  margin-bottom: 12px;
-  font-size: 1.35rem;
-  line-height: 1.25;
+  margin: 36px 0 16px;
+  line-height: 1.3;
 }
 
 #dinner .programme-note-wide > p:not(.eyebrow) {
-  margin-top: 0;
-  margin-bottom: 16px;
-  line-height: 1.75;
+  margin: 0 auto 24px;
+  max-width: 720px;
+  line-height: 1.8;
   color: var(--muted);
 }
 
@@ -1226,77 +1229,30 @@ body.modal-open {
   color: var(--navy);
 }
 
-#dinner .programme-note-wide > p .button {
-  margin-top: 12px;
-}
-
-#dinner .programme-note-wide > p a:not(.button) {
-  color: var(--blue);
-  font-weight: 800;
-  overflow-wrap: anywhere;
+#dinner .programme-note-wide .button {
+  display: inline-flex;
+  margin: 12px auto 0;
 }
 
 @media (max-width: 680px) {
   #dinner .programme-note-wide {
-    padding: 26px 22px;
+    padding: 28px 20px;
   }
 
   #dinner .programme-note-wide > h2 {
-    font-size: clamp(2rem, 8vw, 2.7rem);
-    margin-bottom: 20px;
+    margin-bottom: 26px;
   }
 
   #dinner .programme-note-wide > h3 {
-    margin-top: 28px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+    margin: 30px 0 14px;
   }
 
   #dinner .programme-note-wide > p:not(.eyebrow) {
-    font-size: 0.98rem;
+    margin-bottom: 22px;
     line-height: 1.7;
-    margin-bottom: 16px;
   }
 
   #dinner .programme-note-wide .button {
     width: 100%;
-    text-align: center;
+    justify-content: center;
   }
-
-/* v19 - Dinner centred layout */
-
-#dinner .programme-note-wide {
-  text-align: center;
-}
-
-#dinner .programme-note-wide > .eyebrow {
-  text-align: center;
-}
-
-#dinner .programme-note-wide > h2,
-#dinner .programme-note-wide > h3 {
-  text-align: center;
-}
-
-#dinner .programme-note-wide > p {
-  text-align: center;
-}
-
-#dinner .programme-note-wide > h3 {
-  margin-top: 38px;
-  margin-bottom: 16px;
-}
-
-#dinner .programme-note-wide > p:not(.eyebrow) {
-  margin-bottom: 22px;
-  line-height: 1.75;
-}
-
-@media (max-width: 680px) {
-  #dinner .programme-note-wide > h3 {
-    margin-top: 32px;
-    margin-bottom: 14px;
-  }
-}
-
-
