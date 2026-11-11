@@ -1190,4 +1190,77 @@ body.modal-open {
   .programme-intro-card .rich-text {
     padding-top: 0;
   }
+
+/* v18 - Gather to Nourish Dinner refinements */
+
+#dinner .programme-note-wide {
+  max-width: 920px;
+  text-align: left;
+  padding: clamp(28px, 5vw, 52px);
 }
+
+#dinner .programme-note-wide > .eyebrow {
+  margin-bottom: 14px;
+}
+
+#dinner .programme-note-wide > h2 {
+  margin-bottom: 24px;
+  line-height: 1.12;
+}
+
+#dinner .programme-note-wide > h3 {
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+#dinner .programme-note-wide > p:not(.eyebrow) {
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+#dinner .programme-note-wide > p strong {
+  color: var(--navy);
+}
+
+#dinner .programme-note-wide > p .button {
+  margin-top: 12px;
+}
+
+#dinner .programme-note-wide > p a:not(.button) {
+  color: var(--blue);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 680px) {
+  #dinner .programme-note-wide {
+    padding: 26px 22px;
+  }
+
+  #dinner .programme-note-wide > h2 {
+    font-size: clamp(2rem, 8vw, 2.7rem);
+    margin-bottom: 20px;
+  }
+
+  #dinner .programme-note-wide > h3 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  #dinner .programme-note-wide > p:not(.eyebrow) {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  #dinner .programme-note-wide .button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
